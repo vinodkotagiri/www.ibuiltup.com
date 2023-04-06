@@ -8,6 +8,26 @@ const ROOMS = [
   {
     id: 'living',
     label: 'Living Room'
+  },
+  {
+    id: 'kitchen',
+    label: 'Kitchen'
+  },
+  {
+    id: 'dining',
+    label: 'Dining Room'
+  },
+  {
+    id: 'drawing',
+    label: 'Drawing Room'
+  },
+  {
+    id: 'staircase',
+    label: 'Staircase'
+  },
+  {
+    id: 'parking',
+    label: 'Parking'
   }
 ]
 export default function RoomSelectors() {

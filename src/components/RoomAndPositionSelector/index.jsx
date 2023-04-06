@@ -1,7 +1,5 @@
 import React, { useState } from 'react'
 import { RoomSelector, PositionSelector, RoomControls } from '../'
-import { useDispatch } from 'react-redux'
-
 export default function RoomAndPositionSelector({ room }) {
   const [editingPosition, setEditingPosition] = useState(null)
   const [isRoomAdded, setIsRoomAdded] = useState(false)
