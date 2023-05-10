@@ -1,15 +1,18 @@
-import React from 'react'
-import { Routes, Route } from 'react-router-dom'
-import Drawing from './pages/Drawing'
+import { Route, Routes } from 'react-router-dom'
+import Home from './pages/Home/Home'
+import Navbar from './components/Navbar/Navbar'
+import Drawing from './pages/Drawing/Drawing'
 import { ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 export default function App() {
   return (
-    <div className='w-full h-screen'>
+    <main className='w-screen h-screen'>
+      {/* <Navbar /> */}
       <Routes>
+        <Route path='/' element={<Home />} />
         <Route path='/drawing' element={<Drawing />} />
       </Routes>
-      <ToastContainer />
-    </div>
+      <ToastContainer position='bottom-right' />
+    </main>
   )
 }

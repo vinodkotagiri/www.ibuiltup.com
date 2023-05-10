@@ -1,8 +1,7 @@
 import { configureStore } from '@reduxjs/toolkit'
-import dataReducer from './features/data'
-const store = configureStore({
+import plotReducer from './features/plotSlice'
+export const store = configureStore({
   reducer: {
-    data: dataReducer
+    plot: plotReducer
   }
 })
-export default store
