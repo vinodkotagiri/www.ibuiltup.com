@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { useSelector } from 'react-redux'
+import Builtup from '../Builtup/Builtup'
 
 export default function Plot() {
   const { length, breadth, scale } = useSelector((state) => state.plot)
@@ -10,5 +11,9 @@ export default function Plot() {
       height: Math.floor(breadth * scale)
     })
   }, [length, breadth, scale])
-  return <div className='bg-white border-2 shadow-xl' style={{ width: dimesions.width, height: dimesions.height }}></div>
+  return (
+    <div className='bg-white border-2 shadow-xl relative' style={{ width: dimesions.width, height: dimesions.height }}>
+      <Builtup />
+    </div>
+  )
 }
